@@ -1,0 +1,150 @@
+*{ 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Spartan', sans-serif;
+} 
+
+h1{
+    font-size: SOpx; 
+    line-height: 64px; 
+    color: #222;
+
+}
+
+h2{
+    font-size: 46px; 
+    line-height: 54px; 
+    color: #222;    
+} 
+
+h4{
+    font-size: 20px;  
+    color: #222;
+} 
+
+h6{
+    font-weight:700;
+    font-size: 12px;  
+   
+} 
+
+p{
+    font-size: 16px;  
+    color: #465b52;
+    margin: 15px 0 20px 0;
+} 
+
+.section-p1 {
+    padding: 40px 80px;
+	margin: 40px 0;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+
+}
+body{
+    width: 100%;
+
+}
+
+/* Header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06)
+    z-index:999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding:0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color:#088178;
+}
+
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select {
+	display:block;
+    padding: 5px 10px;
+    margin-bottom: 10px;   
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 16px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details button{
+    background-color:#088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
