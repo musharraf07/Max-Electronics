@@ -3,6 +3,7 @@
         <title> Max Electronics </title>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/ >
         <link rel = "stylesheet" href = "external.css">
+       
     </head>
     <body>
         <section id ="header">
@@ -18,74 +19,54 @@
             </div>       
         </section>
         <section id="cart" class="section-p1">
-            <table width="100%">
-                <thead>
-                    <tr> 
-                        <td>Remove</td> 
-                        <td>Image</td>
-                        <td>Product</td>
-                        <td>Price</td>
-                        <td>Quantity</td>
-                        <td>Subtotal</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                    <tr>
-                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                        <td><img src="Images/newarivals/air1.jpg" alt=""></td>
-                        <td>Apple Ipad Air </td>
-                        <td>Rs 50,000.00</td>
-                        <td><input type="number" Value="1"></td>
-                        <td>Rs 50,000.00</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                        <td><img src="Images/newarivals/PC.jpg" alt=""></td>
-                        <td>hp All in one PC </td>
-                        <td>Rs 75,000.00</td>
-                        <td><input type="number" Value="1"></td>
-                        <td>Rs 1,25,000.00</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                        <td><img src="Images/newarivals/sam.jpg" alt=""></td>
-                        <td>Samsung M32 5G </td>
-                        <td>Rs 16,499.00</td>
-                        <td><input type="number" Value="1"></td>
-                        <td>Rs 1,41,499.00</td>
-                    </tr>
-                    
-                    
-                </tbody>
-            </table>
-        </section>
-        <section id="cart-add" class=section-p1>
-            <div id="coupon">
-                <h3>Apply coupon</h3>
-                <div>
-                    <input type="text" placeholder="Enter Your Coupon">
-                    <button class="button">Apply</button>
-                </div>
+            <div class="cart-header-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                <span class="cart-remove cart-header cart-column">REMOVE</span>
             </div>
-            <div id="sub-t">
-               <h3>Cart Total</h3>
-               <table>
-                <tr>
-                    <td>Cart Subtotal </td>
-                    <td> Rs 1,41,499.00</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>Rs 1,41,499.00</td>
-                </tr>
-            </table>
-            <button class="button">Proced to Checkout</button>
-            </div>    
+
+
+            <div class="cart-items">
+
+                <!-- Cart item for Apple iPad Air -->
+                <div class="cart-item cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/newarivals/air1.jpg" width="100" height="100">
+                        <span class="cart-item-title">Apple iPad Air</span>
+                    </div>
+                    <span class="cart-price cart-column">Rs5000</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn  remove-btn" type="button">REMOVE</button>
+                    </div>
+                </div>
+            
+                <!-- Cart item for HP All in One PC -->
+                <div class="cart-item cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/newarivals/PC.jpg" width="100" height="100">
+                        <span class="cart-item-title">HP All in One PC</span>
+                    </div>
+                    <span class="cart-price cart-column">Rs7500</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn remove-btn" type="button">REMOVE</button>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </section>
+
+
+        <section id="cart-add" class=section-p1>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total </strong>
+                    <span class="cart-total-price">Rs00</span>
+                </div>
+                <button class="btn btn-purchase" type="button">Proceed to Checkout</button>
+            
         </section>
         <section id="footer">
             <footer>
